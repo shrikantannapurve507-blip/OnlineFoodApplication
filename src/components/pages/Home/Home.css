@@ -1,0 +1,419 @@
+
+/* HOME PAGE */
+.home {
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/* WELCOME SECTION */
+.home-welcome {
+    width: 86%;
+    margin: 45px auto;
+    padding: 55px 60px;
+    min-height: 270px;
+    border-radius: 20px;
+    background: linear-gradient(120deg, #fff0e5, #fff8f2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.welcome-content {
+    max-width: 620px;
+}
+
+.welcome-tag,
+.section-label {
+    color: #fc8019;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.welcome-content h1 {
+    font-size: 43px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #282c3f;
+    margin: 15px 0;
+}
+
+.welcome-content h1 span {
+    color: #fc8019;
+}
+
+.welcome-content p {
+    color: #686b78;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.home-explore-btn {
+    display: inline-block;
+    background: #fc8019;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.home-explore-btn:hover {
+    background: #e96d0b;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.welcome-decoration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 260px;
+}
+
+.welcome-decoration span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 48px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+/* BENEFITS */
+.home-benefits {
+    width: 86%;
+    margin: 35px auto 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px;
+    border: 1px solid #eeeeee;
+    border-radius: 13px;
+    background: #fff;
+}
+
+.benefit-item > span {
+    font-size: 32px;
+}
+
+.benefit-item h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-bottom: 5px;
+}
+
+.benefit-item p {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+}
+
+/* COMMON SECTION */
+.home-section,
+.home-restaurants {
+    width: 86%;
+    margin: 65px auto;
+}
+
+.home-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.home-section-heading h2 {
+    color: #282c3f;
+    font-size: 29px;
+    font-weight: 800;
+    margin: 8px 0;
+}
+
+.home-section-heading p {
+    color: #777;
+    font-size: 14px;
+    margin: 0;
+}
+
+.view-all-link {
+    color: #fc8019;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.view-all-link:hover {
+    color: #e96d0b;
+}
+
+/* FOOD GRID */
+.home-food-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+/* RESTAURANTS */
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.restaurant-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    transition: 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+.restaurant-image {
+    height: 175px;
+    position: relative;
+    overflow: hidden;
+}
+
+.restaurant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.restaurant-card:hover .restaurant-image img {
+    transform: scale(1.06);
+}
+
+.restaurant-offer {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    padding: 6px 10px;
+    background: #fc8019;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.restaurant-details {
+    padding: 15px;
+}
+
+.restaurant-details h3 {
+    color: #282c3f;
+    font-size: 17px;
+    font-weight: 750;
+    margin-bottom: 12px;
+}
+
+.restaurant-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 9px;
+}
+
+.restaurant-details p {
+    color: #777;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* SPECIAL OFFER */
+.home-offer {
+    width: 86%;
+    margin: 70px auto;
+    padding: 35px 50px;
+    border-radius: 18px;
+    background: linear-gradient(110deg, #fc8019, #ffab58);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-offer span {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.home-offer h2 {
+    font-size: 27px;
+    font-weight: 800;
+    margin: 12px 0;
+}
+
+.home-offer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.home-offer a {
+    display: inline-block;
+    background: #fff;
+    color: #fc8019;
+    padding: 11px 23px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.offer-emoji {
+    font-size: 100px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .home-food-grid,
+    .restaurant-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .home-welcome,
+    .home-benefits,
+    .home-section,
+    .home-restaurants,
+    .home-offer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-welcome {
+        padding: 35px;
+        min-height: 240px;
+    }
+
+    .welcome-content h1 {
+        font-size: 32px;
+    }
+
+    .welcome-decoration span {
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+    }
+
+    .home-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .home-food-grid,
+    .restaurant-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .home-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .restaurant-image {
+        height: 145px;
+    }
+
+    .home-offer {
+        padding: 30px;
+    }
+
+    .home-offer h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-welcome {
+        width: 92%;
+        padding: 25px 20px;
+        margin: 25px auto;
+    }
+
+    .welcome-content h1 {
+        font-size: 27px;
+    }
+
+    .welcome-content p {
+        font-size: 13px;
+    }
+
+    .welcome-decoration {
+        display: none;
+    }
+
+    .home-section,
+    .home-restaurants,
+    .home-benefits,
+    .home-offer {
+        width: 92%;
+    }
+
+    .home-section-heading h2 {
+        font-size: 21px;
+    }
+
+    .home-section-heading p {
+        font-size: 12px;
+    }
+
+    .restaurant-image {
+        height: 115px;
+    }
+
+    .restaurant-details {
+        padding: 10px;
+    }
+
+    .restaurant-details h3 {
+        font-size: 14px;
+    }
+
+    .restaurant-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .home-offer {
+        padding: 25px 20px;
+    }
+
+    .home-offer h2 {
+        font-size: 19px;
+    }
+
+    .offer-emoji {
+        font-size: 55px;
+    }
+}

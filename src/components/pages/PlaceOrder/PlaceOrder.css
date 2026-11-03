@@ -1,0 +1,125 @@
+
+/* Main Place Order Container */
+.place-order {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 60px;
+    padding: 20px 5%;
+}
+
+/* Left Section */
+.place-order-left {
+    width: 100%;
+    max-width: 650px;
+}
+
+.place-order-left h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #282c3f;
+}
+
+/* Input Fields */
+.place-order-left input {
+    width: 100%;
+    padding: 14px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #d4d5d9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+.place-order-left input:focus {
+    border-color: #fc8019;
+}
+
+/* Multiple Input Fields */
+.multi-fields {
+    display: flex;
+    gap: 15px;
+}
+
+.multi-fields input {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Right Section */
+.place-order-right {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.place-order-right h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #282c3f;
+}
+
+.place-order-right p {
+    color: #686b78;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Place Order Button */
+.place-order-right button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fc8019;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.place-order-right button:hover {
+    background-color: #e66f0c;
+}
+
+/* Tablet Responsive */
+@media (max-width: 900px) {
+    .place-order {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .place-order-left,
+    .place-order-right {
+        max-width: 100%;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+    .place-order {
+        margin-top: 25px;
+        padding: 15px;
+    }
+
+    .place-order-left h2 {
+        font-size: 23px;
+    }
+
+    .multi-fields {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .place-order-right {
+        padding: 20px;
+    }
+}

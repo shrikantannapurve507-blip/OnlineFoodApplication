@@ -1,0 +1,55 @@
+.order-success{
+    display: grid;
+    place-items: center;
+    min-height: 60vh;
+    padding: 40px 0;
+}
+.order-success-box{
+    width: min(92%, 460px);
+    padding: 30px 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 14px #00000020;
+    animation: fadeIn 0.6s;
+}
+.order-success-tick{
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 15px;
+    display: grid;
+    place-items: center;
+    font-size: 34px;
+    color: white;
+    background-color: #2e9e4f;
+    border-radius: 50%;
+}
+.order-success-box p{
+    color: #555;
+}
+.order-success-details{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+.order-success-details div{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    word-break: break-all;
+}
+.order-success-details span:first-child{
+    color: grey;
+    flex-shrink: 0;
+}
+.order-success-btn{
+    display: inline-block;
+    padding: 10px 24px;
+    color: white;
+    background-color: orangered;
+    border-radius: 4px;
+}

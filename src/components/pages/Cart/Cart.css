@@ -1,0 +1,125 @@
+/* Main cart container */
+.cart {
+    width: 85%;
+    margin: 50px auto;
+    color: #454545;
+}
+
+/* Cart items section */
+.cart-items {
+    width: 100%;
+}
+
+/* Heading and product row */
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr 1fr 1fr 1fr 0.7fr;
+    align-items: center;
+    gap: 15px;
+    color: #808080;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Product row */
+.cart-items-item {
+    margin: 15px 0;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Product image */
+.cart-items-item img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: auto;
+}
+
+/* Product text */
+.cart-items-item p {
+    margin: 0;
+}
+
+/* Horizontal line */
+.cart hr {
+    height: 1px;
+    border: none;
+    background-color: #e2e2e2;
+    margin: 10px 0;
+}
+
+/* Remove button */
+.cart-items-item button {
+    background: #fff;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.cart-items-item button:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .cart {
+        width: 95%;
+        margin: 35px auto;
+    }
+
+    .cart-items-title {
+        grid-template-columns: 0.7fr 1.5fr 0.8fr 0.8fr 0.9fr 0.8fr;
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .cart-items-item {
+        font-size: 12px;
+    }
+
+    .cart-items-item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .cart-items-item button {
+        padding: 5px 7px;
+        font-size: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .cart {
+        width: 98%;
+        margin: 25px auto;
+        overflow-x: auto;
+    }
+
+    .cart-items {
+        min-width: 550px;
+    }
+
+    .cart-items-title {
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .cart-items-item {
+        font-size: 12px;
+    }
+
+    .cart-items-item img {
+        width: 40px;
+        height: 40px;
+    }
+}
